@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Enlazamos nuestro framework -->
+    <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+    <!-- Enlazamos nuestra archivo de estilos CSS -->
+    <link rel="stylesheet" href="../css/view-main.css">
+    <!-- Enlazamos el CSS de nuestro filtrado -->
+    <link rel="stylesheet" href="../css/data.css">
+	<!-- Enlazamos nuestra fuente de google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<!-- Enlazamos nuestro logo -->
+    <link rel="shortcut icon" href="../assets/img/fresh-logo.jpg" type="image/x-icon">
+    <!-- Enlazamos nuestros icons de fontawesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Food Style</title>
+</head>
+<body class="fondo-black">
+    <main>
+        <div class="container-fluid">
+            <!-- Esta es nuestra vista principal -->
+            <div class="row">
+                <div class="col-xs-12 center">
+                    <h1>
+                        <img src="../assets/img/food-header.png" class="img-responsive logo-principal" alt="">
+                    </h1>
+                    <br>
+                    <span>La mejor comida saludable en tu mesa</span>
+                    <br>
+                    <br>
+                </div>
+                <!-- Input de búsqueda -->
+                <div class="col-sm-6 header-top" id="main-search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" autofocus placeholder="Ingrese el Distrito" id="inputBusqueda">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Buscar</button>
+                        </span>
+                    </div>
+                    <!-- Estructura de nuestra tabla de Restaurantes -->
+                    <div class="search" id="search">
+                        <table class="search-table" id="searchTable">
+                            <thead>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a>
+                                            <button type="button" class="btn btn-link" id="showmodal" data-toggle="modal" data-target="#exampleModal"
+                                                data-whatever="@mdo">San Borja</button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a>
+                                            <button type="button" class="btn btn-link" id="showmodal" data-toggle="modal" data-target="#exampleModal"
+                                                data-whatever="@mdo">Santiago de Surco</button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a>
+                                            <button type="button" class="btn btn-link" id="showmodal" data-toggle="modal" data-target="#exampleModal"
+                                                data-whatever="@mdo">Miraflores</button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a>
+                                            <button type="button" class="btn btn-link" id="showmodal" data-toggle="modal" data-target="#exampleModal"
+                                                data-whatever="@mdo">San Miguel</button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a>
+                                            <button type="button" class="btn btn-link" id="showmodal" data-toggle="modal" data-target="#exampleModal"
+                                                data-whatever="@mdo">Barranco</button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a>
+                                            <button type="button" class="btn btn-link" id="showmodal" data-toggle="modal" data-target="#exampleModal"
+                                                data-whatever="@mdo">Jesús María</button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a>
+                                            <button type="button" class="btn btn-link" id="showmodal" data-toggle="modal" data-target="#exampleModal"
+                                                data-whatever="@mdo">Breña</button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a>
+                                            <button type="button" class="btn btn-link" id="showmodal" data-toggle="modal" data-target="#exampleModal"
+                                                data-whatever="@mdo">San Isidro</button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a>
+                                            <button type="button" class="btn btn-link" id="showmodal" data-toggle="modal" data-target="#exampleModal"
+                                                data-whatever="@mdo">Chorrillos</button>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Imágenes para el slider -->
+                <div class="container">
+                    <br>
+                    <div class="col-xs-12">
+                        <div id="carousel-1" class="carousel slide" data-ride="carousel">
+                            <!-- Ingresamos los indicadores para las imágenes -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-1" data-slide-to="1"></li>
+                                <li data-target="#carousel-1" data-slide-to="2"></li>
+                                <li data-target="#carousel-1" data-slide-to="3"></li>
+                            </ol>
+                            <!-- Contenedor de los slide -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="../assets/img/comerenrestaurantes.jpg" class="img-responsive" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="../assets/img/IMG_4208.jpg" class="img-responsive" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="../assets/img/dieta-paleo.jpg" class="img-responsive" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="../assets/img/receta.jpg" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Estructura del modal de bootstrap -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="exampleModalLabel">Restaurantes por Distrito</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <img src="../assets/img-distrit/barranco.png" alt="barranco" class="img-responsive img-thumbnail">
+                            </div>
+                            <div class="col-xs-6">
+                                <span>
+                                    <a href="https://limaorganica.pe/raw-cafe/" target="_black">Modo Orgánico</a>
+                                </span>
+                            </div>
+                            <div class="col-xs-6">
+                                <i class="fa fa-star" aria-hidden="true" style="color: yellow"></i>
+                                <i class="fa fa-star" aria-hidden="true" style="color: yellow"></i>
+                                <i class="fa fa-star" aria-hidden="true" style="color: yellow"></i>
+                                <i class="fa fa-star" aria-hidden="true" style="color: yellow"></i>
+                                <i class="fa fa-star" aria-hidden="true" style="color: yellow"></i>
+                                <br>
+                            </div>
+                            <div class="col-xs-6">
+                                <span>
+                                    <a href="https://limaorganica.pe/holi-kitchen/" target="_black">Bio Leben</a>
+                                </span>
+                            </div>
+                            <div class="col-xs-6">
+                                <i class="fa fa-star" aria-hidden="true" style="color: yellow"></i>
+                                <i class="fa fa-star" aria-hidden="true" style="color: yellow"></i>
+                                <i class="fa fa-star" aria-hidden="true" style="color: yellow"></i>
+                                <i class="fa fa-star" aria-hidden="true" style="color: yellow"></i>
+                                <i class="fa fa-star" aria-hidden="true" style="color: yellow"></i>
+                                <br>
+                            </div>
+                            <div class="col-xs-6">
+                                <span>
+                                    <a href="https://limaorganica.pe/veggie-pizza/">Veggie Pizza</a>
+                                </span>
+                            </div>
+                            <div class="col-xs-6">
+                                <i class="fa fa-star" aria-hidden="true" style="color: yellow"></i>
+                                <i class="fa fa-star" aria-hidden="true" style="color: yellow"></i>
+                                <i class="fa fa-star" aria-hidden="true" style="color: yellow"></i>
+                                <i class="fa fa-star" aria-hidden="true" style="color: yellow"></i>
+                                <i class="fa fa-star" aria-hidden="true" style="color: yellow"></i>
+                                <br>
+                            </div>
+                            <div class="col-xs-6">
+                                <span>
+                                    <a href="https://www.rawcafe.com.pe/">Raw Café</a>
+                                </span>
+                            </div>
+                            <div class="col-xs-6">
+                                <i class="fa fa-star" aria-hidden="true" style="color: yellow"></i>
+                                <i class="fa fa-star" aria-hidden="true" style="color: yellow"></i>
+                                <i class="fa fa-star" aria-hidden="true" style="color: yellow"></i>
+                                <i class="fa fa-star-half-o" style="color: yellow" aria-hidden="true"></i>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="closemap" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Enlazamos los archivos de la librería de Jquery -->
+    <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
+    <!-- Enlazamos nuestra dataTables -->
+    <script src="../vendors/jquery/jquery.dataTables.min.js"></script>
+    <!-- Enlazamos la librería de JS de bootstrap -->
+    <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Enlazamos nuestro archivo JS para el filtrado del input -->
+    <script src="../js/data.js"></script>
+</body>
+</html>

@@ -10,8 +10,11 @@
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.slogan {
-	display: flex;
-	justify-content: center;
-	margin-top: 30rem;
+.logo-principal {
+    filter: drop-shadow(2px 2px 5px #999);
+}
+
+.center {
+    text-align: center;
+    font-size: 2em;
 }
